@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
     });
 });
 
+app.use('/api/fruits', require('./routes/routes'));
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
